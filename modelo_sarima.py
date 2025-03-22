@@ -83,12 +83,12 @@ def run_sarima_grid_search(
         print("\n❌ Nenhum modelo foi ajustado com sucesso.")
 
 # Definir intervalos personalizados
-p_values = range(1, 11) 
+p_values = range(1, 12) 
 d_values = [1]  # Manter d fixo
-q_values = range(1, 11)  
-P_values = range(0, 11)  
+q_values = range(1, 12)  
+P_values = range(1, 12)  
 D_values = [1] # Manter D fixo
-Q_values = range(0, 11)  
+Q_values = range(1, 12)  
 s = 12  # Sazonalidade mensal
 
 import warnings
