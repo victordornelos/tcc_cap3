@@ -1,0 +1,7 @@
+pandas
+seaborn
+matplotlib
+statsmodels
+numpy
+scipy
+joblib==1.3.2
