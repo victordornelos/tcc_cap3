@@ -82,27 +82,3 @@ def run_sarima_grid_search(
     else:
         print("\n❌ Nenhum modelo foi ajustado com sucesso.")
 
-# Definir intervalos personalizados
-p_values = range(1, 12) 
-d_values = [1]  # Manter d fixo
-q_values = range(1, 12)  
-P_values = range(1, 12)  
-D_values = [1] # Manter D fixo
-Q_values = range(1, 12)  
-s = 12  # Sazonalidade mensal
-
-import warnings
-warnings.filterwarnings("ignore", category=UserWarning, module="statsmodels")
-
-# Rodar a função com os intervalos escolhidos
-run_sarima_grid_search(
-    file_path="dados_saida/df_sarima.xlsx",
-    output_file="resultado/resultados_sarima.xlsx",
-    p_values=p_values,
-    d_values=d_values,
-    q_values=q_values,
-    P_values=P_values,
-    D_values=D_values,
-    Q_values=Q_values,
-    s=s
-)
