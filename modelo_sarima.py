@@ -9,7 +9,7 @@ from joblib import Parallel, delayed, cpu_count
 
 def run_sarima_grid_search(
     file_path="df_sarima.xlsx",
-    output_file="resultados_sarima.xlsx",
+    output_file="resultados_sarima_2023.xlsx",
     p_values=range(1, 6),
     d_values=[1],
     q_values=range(1, 6),
